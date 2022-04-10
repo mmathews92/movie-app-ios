@@ -16,6 +16,12 @@
 		C97F907A28034A8200651E13 /* moviesappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F907928034A8200651E13 /* moviesappTests.swift */; };
 		C97F908428034A8200651E13 /* moviesappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F908328034A8200651E13 /* moviesappUITests.swift */; };
 		C97F908628034A8200651E13 /* moviesappUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F908528034A8200651E13 /* moviesappUITestsLaunchTests.swift */; };
+		C97F9098280351A300651E13 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F9097280351A300651E13 /* LoginView.swift */; };
+		C97F909A280351B200651E13 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F9099280351B200651E13 /* LoginViewModel.swift */; };
+		C97F909C280351C400651E13 /* LoginDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F909B280351C400651E13 /* LoginDataModel.swift */; };
+		C97F909F280352BC00651E13 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F909E280352BC00651E13 /* LoginManager.swift */; };
+		C97F90A1280353AC00651E13 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F90A0280353AC00651E13 /* MoviesListView.swift */; };
+		C97F90A528035ECF00651E13 /* LoginValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F90A428035ECF00651E13 /* LoginValidationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,12 @@
 		C97F907F28034A8200651E13 /* moviesappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moviesappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97F908328034A8200651E13 /* moviesappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesappUITests.swift; sourceTree = "<group>"; };
 		C97F908528034A8200651E13 /* moviesappUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moviesappUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C97F9097280351A300651E13 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C97F9099280351B200651E13 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		C97F909B280351C400651E13 /* LoginDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDataModel.swift; sourceTree = "<group>"; };
+		C97F909E280352BC00651E13 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		C97F90A0280353AC00651E13 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
+		C97F90A428035ECF00651E13 /* LoginValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginValidationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +110,13 @@
 		C97F906228034A8000651E13 /* moviesapp */ = {
 			isa = PBXGroup;
 			children = (
+				C97F90952803505700651E13 /* Resources */,
+				C97F90922803501C00651E13 /* Models */,
+				C97F90932803502700651E13 /* ViewModels */,
+				C97F90942803503100651E13 /* Views */,
 				C97F906328034A8000651E13 /* moviesappApp.swift */,
 				C97F906528034A8000651E13 /* ContentView.swift */,
 				C97F906728034A8200651E13 /* Assets.xcassets */,
-				C97F906C28034A8200651E13 /* Persistence.swift */,
 				C97F906E28034A8200651E13 /* moviesapp.xcdatamodeld */,
 				C97F906928034A8200651E13 /* Preview Content */,
 			);
@@ -120,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				C97F907928034A8200651E13 /* moviesappTests.swift */,
+				C97F90A428035ECF00651E13 /* LoginValidationTests.swift */,
 			);
 			path = moviesappTests;
 			sourceTree = "<group>";
@@ -131,6 +147,48 @@
 				C97F908528034A8200651E13 /* moviesappUITestsLaunchTests.swift */,
 			);
 			path = moviesappUITests;
+			sourceTree = "<group>";
+		};
+		C97F90922803501C00651E13 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C97F909B280351C400651E13 /* LoginDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C97F90932803502700651E13 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C97F909D280352A800651E13 /* Managers */,
+				C97F9099280351B200651E13 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C97F90942803503100651E13 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C97F9097280351A300651E13 /* LoginView.swift */,
+				C97F90A0280353AC00651E13 /* MoviesListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C97F90952803505700651E13 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C97F906C28034A8200651E13 /* Persistence.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C97F909D280352A800651E13 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C97F909E280352BC00651E13 /* LoginManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +321,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97F90A1280353AC00651E13 /* MoviesListView.swift in Sources */,
 				C97F906D28034A8200651E13 /* Persistence.swift in Sources */,
+				C97F909F280352BC00651E13 /* LoginManager.swift in Sources */,
 				C97F906628034A8000651E13 /* ContentView.swift in Sources */,
+				C97F909A280351B200651E13 /* LoginViewModel.swift in Sources */,
+				C97F909C280351C400651E13 /* LoginDataModel.swift in Sources */,
 				C97F907028034A8200651E13 /* moviesapp.xcdatamodeld in Sources */,
+				C97F9098280351A300651E13 /* LoginView.swift in Sources */,
 				C97F906428034A8000651E13 /* moviesappApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C97F90A528035ECF00651E13 /* LoginValidationTests.swift in Sources */,
 				C97F907A28034A8200651E13 /* moviesappTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

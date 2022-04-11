@@ -29,6 +29,7 @@
 		C97F90AF280392B500651E13 /* MoviesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F90AE280392B500651E13 /* MoviesListViewModel.swift */; };
 		C97F90B22803937A00651E13 /* MovieListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F90B12803937A00651E13 /* MovieListItem.swift */; };
 		C97F90B4280393A600651E13 /* MovieDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F90B3280393A600651E13 /* MovieDetailsView.swift */; };
+		C97F90B62803B55E00651E13 /* LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97F90B52803B55E00651E13 /* LoginUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		C97F90AE280392B500651E13 /* MoviesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListViewModel.swift; sourceTree = "<group>"; };
 		C97F90B12803937A00651E13 /* MovieListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListItem.swift; sourceTree = "<group>"; };
 		C97F90B3280393A600651E13 /* MovieDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsView.swift; sourceTree = "<group>"; };
+		C97F90B52803B55E00651E13 /* LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 			children = (
 				C97F908328034A8200651E13 /* moviesappUITests.swift */,
 				C97F908528034A8200651E13 /* moviesappUITestsLaunchTests.swift */,
+				C97F90B52803B55E00651E13 /* LoginUITests.swift */,
 			);
 			path = moviesappUITests;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 			files = (
 				C97F908428034A8200651E13 /* moviesappUITests.swift in Sources */,
 				C97F908628034A8200651E13 /* moviesappUITestsLaunchTests.swift in Sources */,
+				C97F90B62803B55E00651E13 /* LoginUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

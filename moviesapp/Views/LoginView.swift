@@ -39,9 +39,10 @@ struct LoginView: View {
                         .cornerRadius(15)
                 }).alert(isPresented: $loginViewModel.loginDataModel.isPresentingErrorAlert, content: {
                     Alert(
-                        title: Text("Login Error"), message: Text(loginViewModel.loginDataModel.errorMessage), dismissButton: .cancel(Text("Ok"))
+                        title: Text("Login Error"), message: Text(loginViewModel.loginDataModel.errorMessage), dismissButton: Alert.Button.default(Text("OK"))
                     )
                 })
+                .accessibilityIdentifier("loginButton")
                 .padding(.top, 20)
                 
             }

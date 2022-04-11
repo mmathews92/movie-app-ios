@@ -19,7 +19,7 @@ struct LoginView: View {
                 SecureField("password", text: $loginViewModel.loginDataModel.userPassword)
                 
                 NavigationLink (
-                    destination: MoviesListView(),
+                    destination: NavigationLazyView(MoviesListView()),
                     isActive: $loginViewModel.loginDataModel.navigate,
                     label: {
                         EmptyView()

@@ -17,7 +17,7 @@ class LoginValidationTests: XCTestCase {
         loginViewModel = LoginViewModel()
     }
     
-    func testLoginInputsEmpty() {
+    func testLoginValidation() {
         loginViewModel.loginDataModel.userName = "Admin"
         loginViewModel.loginDataModel.userPassword = "Password*123"
         
